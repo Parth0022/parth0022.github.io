@@ -1,1 +1,0 @@
-# parth0022-github.io

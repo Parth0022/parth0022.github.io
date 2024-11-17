@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); 
+  
+   /* Basic styling */
+        body {
+          font-family: "Poppins", sans-serif;
+          display: flex;
+          margin: 0;
+          padding: 0;
+          min-height: 100vh;
+          flex-direction: row; /* Change to row for horizontal layout */
+      }
+      
+      /* Sidebar styling */
+      .sidebar {
+          width: 450px; /* Fixed width for sidebar */
+          background-color: #f4f4f4;
+          padding: 20px;
+          box-sizing: border-box;
+          border-right: 1px solid #ccc;
+      }
+
+      .profile-image {
+        width: 350px; /* Set the desired width */
+        height: 350px; /* Set the desired height */
+        border-radius: 12%; /* Make the image circular */
+        object-fit: cover; /* Ensure the image covers the area without distortion */
+        margin-bottom: 20px; /* Space below the image */
+    }
+      
+              .sidebar h1 {
+                  font-size: 24px;
+                  margin-bottom: 20px;
+                  text-align: center;
+              }
+      
+              .download-button {
+                  padding: 10px 20px;
+                  background-color: #007bff;
+                  color: #fff;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  text-align: center;
+                  margin-top: 10px;
+                  display: inline-block;
+                  align-items: center;
+              }
+      
+              .download-button:hover,
+              .download-button:focus {
+                  background-color: #0056b3;
+              }
+
+              /* social media */
+              .social-media {
+                display: flex;
+                gap: 20px; /* Space between icons */
+                margin-top: 20px; /* Space above icons */
+                text-align: center;
+            }
+            
+            .social-media a {
+                color: #000; /* Icon color */
+                font-size: 36px; /* Size of the icons */
+                text-decoration: none; /* Remove underline */
+            }
+            
+            .social-media a:hover {
+                color: #0077b5; /* Change color on hover for LinkedIn */
+            }
+            
+            .social-media a:nth-child(2):hover {
+                color: #333; /* Change color on hover for GitHub */
+            }
+            
+            .social-media a:last-child:hover {
+                color: #d14836; /* Change color on hover for Email */
+            }
+      
+              /* Main content styling */
+              .main-content {
+          flex-grow: 1; /* Allow main content to take remaining space */
+          padding: 20px;
+          overflow-y: auto;
+      }
+/*-------------------------------------Skils--------------------------------*/
+.skills-container {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #f8f9fa; /* Light background for the skills section */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.skills-container h2 {
+  font-size: 1.5rem; /* Heading size */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.skills-container p {
+  font-size: 1rem; /* Font size for skills */
+  margin: 5px 0; /* Space between skill lines */
+}
+
+/*-------------------------------------Tabs--------------------------------*/
+              .tabs {
+                  display: flex;
+                  cursor: pointer;
+                  margin-bottom: 10px;
+                  /* border-bottom: 1px solid #ccc; */
+                  padding-bottom: 10px;
+              }
+              
+              .tab {
+                  padding: 10px 20px;
+                  background-color: #ddd;
+                  border: 1px solid #ccc;
+                  /* border-bottom: none; */
+                  margin-right: 5px;
+                  border-radius: 12px;
+                  transition: background-color 0.3s;
+              }
+              
+              .tab.active, .tab:hover, .tab:focus {
+                  background-color: #fff;
+                  font-weight: bold;
+                  outline: none;
+              }
+              
+              .tab-content {
+                  display: none;
+                  padding: 20px;
+                  border: 1px solid #ccc;
+                  transition: opacity 0.3s;
+                  border-radius: 12px;
+              }
+              
+              .tab-content.active {
+                  display: block;
+                  opacity: 1;
+                  border-radius: 12px;
+              }
+
+
+      
+              /* Responsive design for mobile */
+              @media (max-width: 390px) {
+          body {
+              flex-direction: column; /* Stack vertically on small screens */
+          }
+          .sidebar {
+              width: 100%; /* Full width for sidebar on mobile */
+              border-right: none;
+              border-bottom: 1px solid #ccc;
+          }
+          .main-content {
+              width: 100%; /* Full width for main content on mobile */
+          }
+      }
+/*-------------------------------------aboutme--------------------------------*/
+.education-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e9f5ff; /* Light background for highlighting */
+  border-left: 4px solid #007bff; /* Left border for emphasis */
+}
+
+.education-container h2 {
+  margin: 0 0 10px 0;
+}
+
+.education-container ul {
+  list-style-type: disc; /* Bullet points for the list */
+  padding-left: 20px; /* Indent the list */
+}
+
+/*-------------------------------------Experience--------------------------------*/
+/* h5.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+p.card-text {
+  font-size: 1rem;
+  color: #555555;
+}
+
+ */
+ .experience-container {
+  margin-top: 20px;
+}
+
+.experience-container h2 {
+  font-size: 2rem; /* Heading size */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.experience-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 15px; /* Space between cards */
+  transition: transform 0.3s; /* Animation effect */
+}
+
+.experience-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Job title size */
+  font-weight: 600; /* Bold title */
+  color: #1d1d1f; /* Dark color for title */
+}
+
+.company-name {
+  font-size: 1.2rem; /* Company name size */
+  font-weight: 500; /* Medium weight */
+  color: #007bff; /* Blue color for company name */
+  margin: 5px 0; /* Space above and below */
+}
+
+.duration {
+  font-size: 0.9rem; /* Duration size */
+  color: #555; /* Grey color for duration */
+}
+
+.card-text {
+  font-size: 1rem; /* Description size */
+  color: #333; /* Darker grey for text */
+}
+
+/* Responsive design for experience cards */
+@media (max-width: 768px) {
+  .experience-card {
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .card-title {
+      font-size: 1.25rem; /* Smaller title size */
+  }
+
+  .company-name {
+      font-size: 1rem; /* Smaller company name size */
+  }
+
+  .duration {
+      font-size: 0.8rem; /* Smaller duration size */
+  }
+
+  .card-text {
+      font-size: 0.9rem; /* Smaller description size */
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-container h2 {
+      font-size: 1.5rem; /* Further reduce heading size */
+  }
+
+  .experience-card {
+      padding: 10px; /* Further adjust padding */
+  }
+}
+
+/*-------------------------------------Project Cards--------------------------------*/
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.github-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #24292e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.github-button:hover {
+  background-color: #444;
+}
+
+.tag.html { background-color: #e34c26; }
+.tag.java { background-color: #007396; /* Java Blue */}
+.tag.tailwind { background-color: #38bdf8; /* Tailwind Light Blue */}
+.tag.python { background-color: #306998; /* Python Blue */}
+.tag.jupyter { background-color: #f37726; /* Jupyter Orange */}
+.tag.php { background-color: #777bb4; /* PHP Purple */}
+.tag.css { background-color: #2965f1; }
+.tag.js { background-color: #f7df1e; color: black; }
+.tag.react { background-color: #61dbfb; color: black; }
+.tag.nodejs { background-color: #68a063; }
+.tag.mongodb { background-color: #4db33d; }
+.tag.express { background-color: #303030; }
+.tag.mysql { background-color: #00758f; }
+
+@media screen and (max-width: 430px) {
+  .project {
+    width: 100%;
+  }
+}
+
+
+/*-------------------------------------Contact Form--------------------------------*/
+.container {
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa; /* Light background to match the theme */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1d1d1f; /* Darker color for heading */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500; /* Medium weight for labels */
+  color: #333; /* Darker color for labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.toast-container {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+
+.toast {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green background for success messages */
+  color: white;
+  border-radius: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  .container {
+      margin: 20px; /* Reduce margin on smaller screens */
+      padding: 20px; /* Adjust padding */
+  }
+
+  h1 {
+      font-size: 1.5em; /* Adjust heading size */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      font-size: 14px; /* Slightly smaller font size */
+  }
+
+  button[type="submit"] {
+      width: 100%; /* Make button full-width */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.2em; /* Further reduce heading size */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      font-size: 12px; /* Further reduce input font size */
+  }
+
+  button[type="submit"] {
+      padding: 8px 15px; /* Adjust button padding */
+  }
+}

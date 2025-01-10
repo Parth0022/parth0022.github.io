@@ -1,0 +1,201 @@
+/* responsive.css */
+
+/* Global Responsive Adjustments */
+@media screen and (max-width: 1200px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-width: 100%;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Mobile Responsive Designs */
+@media screen and (max-width: 768px) {
+    /* Sidebar Adjustments */
+    .sidebar {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 15px;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    /* Skills Section */
+    .skills-container {
+        padding: 10px;
+    }
+
+    .skills-container h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Experience Cards */
+    .experience-card {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .company-name {
+        font-size: 1rem;
+    }
+
+    /* Project Cards */
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /* Tabs */
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    /* Contact Form */
+    .container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    /* Extreme Mobile Adjustments */
+    body {
+        font-size: 14px;
+    }
+
+    .sidebar h1 {
+        font-size: 20px;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .social-media a {
+        font-size: 28px;
+    }
+
+    .skills-container {
+        font-size: 0.9rem;
+    }
+
+    .experience-card {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .tag {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+}
+
+/* Ultra Small Devices */
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .social-media a {
+        font-size: 24px;
+    }
+
+    .download-button, .github-button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Orientation Adjustments */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 300px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .main-content {
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .contact-info, 
+    .responsive-form {
+        min-width: 100%;
+    }
+
+    .contact-info {
+        margin-bottom: 20px;
+    }
+}
+
+/* High Resolution Displays */
+@media screen and (min-resolution: 300dpi) {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .profile-image {
+        border: 2px solid rgba(0,0,0,0.1);
+    }
+}
